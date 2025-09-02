@@ -4,6 +4,8 @@ export const FEATURES_PAGE_PATH = "/features";
 
 export const DOWNLOADS_PAGE_PATH = "/downloads";
 
+export const CONTACT_US_PAGE_PATH = "/contact-us";
+
 export const PRIVACY_POLICY_PAGE_PATH = "/privacy-policy";
 
 export const TERMS_OF_SERVICES_PAGE_PATH = "/terms-of-services";

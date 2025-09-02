@@ -7,6 +7,7 @@ import TwitterIcon from "@/icons/TwitterIcon";
 import InstagramIcon from "@/icons/InstagramIcon";
 import LinkedInIcon from "@/icons/LinkedInIcon";
 import {
+  CONTACT_US_PAGE_PATH,
   DASHBOARD_PAGE_PATH,
   DOWNLOADS_PAGE_PATH,
   FEATURES_PAGE_PATH,
@@ -49,6 +50,7 @@ const Footer: FC = () => (
           {
             heading: "Products",
             links: [
+              { name: "Contact Us", href: CONTACT_US_PAGE_PATH },
               { name: "Downloads", href: DOWNLOADS_PAGE_PATH },
               { name: "Features", href: FEATURES_PAGE_PATH },
             ],
@@ -86,7 +88,7 @@ const Footer: FC = () => (
 
       <div className="w-full flex justify-between items-center py-4 lg:py-6">
         <div className="text-sm text-default-500">
-          © 2025 KryptonymeVPN. All rights reserved.
+          © 2025 EasyGuard. All rights reserved.
         </div>
         <div className="text-base text-default-500">
           <span>Powered by </span>
