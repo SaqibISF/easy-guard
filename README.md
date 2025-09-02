@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Envoirnment Variables
+
+First, Add the following envoirnment variables:
+
+```javascript
+NEXT_PUBLIC_REST_API_BASE_URL=
+AUTH_SECRET=
+AUTH_URL=
+```
+
 ## Getting Started
 
 First, run the development server:
