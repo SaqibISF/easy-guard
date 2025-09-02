@@ -10,7 +10,6 @@ import {
   DASHBOARD_PAGE_PATH,
   DOWNLOADS_PAGE_PATH,
   FEATURES_PAGE_PATH,
-  PRICING_PAGE_PATH,
   PRIVACY_POLICY_PAGE_PATH,
   TERMS_OF_SERVICES_PAGE_PATH,
 } from "@/lib/pathnames";
@@ -51,7 +50,6 @@ const Footer: FC = () => (
             heading: "Products",
             links: [
               { name: "Downloads", href: DOWNLOADS_PAGE_PATH },
-              { name: "Pricing", href: PRICING_PAGE_PATH },
               { name: "Features", href: FEATURES_PAGE_PATH },
             ],
           },

@@ -6,7 +6,7 @@ import Section, {
 } from "../Section";
 import { Button } from "@heroui/button";
 import Link from "next/link";
-import { PRICING_PAGE_PATH } from "@/lib/pathnames";
+import { DOWNLOADS_PAGE_PATH } from "@/lib/pathnames";
 import Image from "next/image";
 import { CheckCircleIcon } from "@heroicons/react/16/solid";
 
@@ -21,7 +21,7 @@ const HomeSection: FC<SectionProps> = ({ ...props }) => (
         Experience ultimate online privacy and security with Essay Guard VPN.
         Connect to 100+ servers worldwide and browse the internet safely.
       </SectionDescription>
-      <Button as={Link} href={PRICING_PAGE_PATH} color="primary" size="lg">
+      <Button as={Link} href={DOWNLOADS_PAGE_PATH} color="primary" size="lg">
         Get Started
       </Button>
 

@@ -20,7 +20,6 @@ import { ThemeSwitch } from "@/components/ThemeSwitch";
 import {
   HOME_PAGE_PATH,
   FEATURES_PAGE_PATH,
-  PRICING_PAGE_PATH,
   DOWNLOADS_PAGE_PATH,
 } from "@/lib/pathnames";
 import AppLogo from "./AppLogo";
@@ -34,10 +33,6 @@ const Navbar: FC = () => {
     {
       label: "Features",
       href: FEATURES_PAGE_PATH,
-    },
-    {
-      label: "Pricing",
-      href: PRICING_PAGE_PATH,
     },
   ];
 
