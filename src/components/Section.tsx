@@ -1,11 +1,11 @@
-import React, { ComponentProps, FC, HTMLAttributes, ReactNode } from "react";
-import { motion } from "framer-motion";
+import React, { FC, HTMLAttributes, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 export type SectionProps = HTMLAttributes<HTMLElement> & {
   isHeroSection?: boolean;
   heading?: ReactNode;
   description?: ReactNode;
+  bgDefaultGradient?: boolean;
   bgDefault?: boolean;
   classNames?: {
     section?: string;
@@ -21,7 +21,7 @@ const SectionHeading: FC<HTMLAttributes<HTMLHeadingElement>> = ({
   ...props
 }) =>
   children ? (
-    <h3
+    <h1
       className={cn(
         "sm:text-4xl text-3xl font-bold leading-14 text-center mb-6",
         className
@@ -29,7 +29,7 @@ const SectionHeading: FC<HTMLAttributes<HTMLHeadingElement>> = ({
       {...props}
     >
       {children}
-    </h3>
+    </h1>
   ) : null;
 
 const SectionDescription: FC<HTMLAttributes<HTMLParagraphElement>> = ({
@@ -53,18 +53,26 @@ const Section: FC<SectionProps> = ({
   isHeroSection,
   heading,
   description,
+  bgDefaultGradient,
   bgDefault,
   classNames,
   className,
   children,
+  style,
   ...props
 }) => (
   <section
     className={cn(
       "w-full flex flex-col items-center justify-center",
-      bgDefault ? "bg-default-100" : "",
+      bgDefault ? "bg-neutral-100 dark:bg-gray-900" : "",
       classNames?.section
     )}
+    style={{
+      background: bgDefaultGradient
+        ? "linear-gradient(90deg, rgba(255, 59, 48, 0.10) 0%, rgba(26, 189, 204, 0.10) 100%)"
+        : undefined,
+      ...style,
+    }}
     {...props}
   >
     <div
