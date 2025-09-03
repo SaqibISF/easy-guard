@@ -19,7 +19,7 @@ import { ThemeSwitch } from "@/components/ThemeSwitch";
 
 import {
   HOME_PAGE_PATH,
-  FEATURES_PAGE_PATH,
+  CONTACT_US_PAGE_PATH,
   DOWNLOADS_PAGE_PATH,
 } from "@/lib/pathnames";
 import AppLogo from "./AppLogo";
@@ -28,12 +28,12 @@ import { usePathname } from "next/navigation";
 const Navbar: FC = () => {
   const pathname = usePathname();
 
-  const navItems = [
-    { label: "Home", href: HOME_PAGE_PATH },
-    {
-      label: "Features",
-      href: FEATURES_PAGE_PATH,
-    },
+  const navItems: { label: string; href: string }[] = [
+    // { label: "Home", href: HOME_PAGE_PATH },
+    // {
+    //   label: "Features",
+    //   href: FEATURES_PAGE_PATH,
+    // },
   ];
 
   return (
@@ -101,12 +101,12 @@ const Navbar: FC = () => {
           <NavbarMenuItem>
             <Button
               as={Link}
-              href={DOWNLOADS_PAGE_PATH}
+              href={CONTACT_US_PAGE_PATH}
               color="primary"
               radius="full"
               fullWidth
             >
-              Download
+              Contact Us
             </Button>
           </NavbarMenuItem>
         </div>

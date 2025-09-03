@@ -7,7 +7,6 @@ import TwitterIcon from "@/icons/TwitterIcon";
 import InstagramIcon from "@/icons/InstagramIcon";
 import LinkedInIcon from "@/icons/LinkedInIcon";
 import {
-  CONTACT_US_PAGE_PATH,
   DASHBOARD_PAGE_PATH,
   DOWNLOADS_PAGE_PATH,
   FEATURES_PAGE_PATH,
@@ -17,7 +16,7 @@ import {
 import { Divider } from "@heroui/divider";
 
 const Footer: FC = () => (
-  <footer className="w-full bg-gray-950">
+  <footer className="w-full bg-white dark:bg-gray-950">
     <div className="w-full max-w-7xl mx-auto px-4">
       <div className="w-full py-12 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         <div className="flex flex-col gap-4 col-span-2 md:col-span-3 lg:col-span-2">
@@ -50,7 +49,6 @@ const Footer: FC = () => (
           {
             heading: "Products",
             links: [
-              { name: "Contact Us", href: CONTACT_US_PAGE_PATH },
               { name: "Downloads", href: DOWNLOADS_PAGE_PATH },
               { name: "Features", href: FEATURES_PAGE_PATH },
             ],
@@ -68,7 +66,7 @@ const Footer: FC = () => (
           },
         ].map(({ heading, links }) => (
           <section key={heading} className="w-full px-4 flex flex-col gap-4">
-            <h4 className="text-white text-lg font-semibold">{heading}</h4>
+            <h4 className="text-lg font-semibold">{heading}</h4>
             <ul className="text-lg flex flex-col gap-3">
               {links.map((link) => (
                 <Link

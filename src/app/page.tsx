@@ -32,7 +32,7 @@ const HomePage: FC = () => (
     <Section
       bgDefaultGradient
       heading="Ready to Secure Your Digital Life?"
-      description="Join millions of users who trust SafePro VPN to protect their online privacy and security."
+      description="Join millions of users who trust EasyGuard VPN to protect their online privacy and security."
     >
       <Button as={Link} href={DOWNLOADS_PAGE_PATH} color="primary" size="lg">
         Get Started
