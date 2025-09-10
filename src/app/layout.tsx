@@ -12,8 +12,9 @@ const fontSans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: { default: "Easy Guard", template: "%s | Easy Guard" },
+  title: { default: "EasyGuard", template: "%s | EasyGuard" },
   description: "Created by M Saqib Ali",
+  icons: ["/logo.png"],
 };
 
 export const viewPort: Viewport = {
